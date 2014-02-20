@@ -57,5 +57,6 @@ if __name__ == '__main__':
         print "ERROR::FLUME:Arguments to check script are wrong. expecting [1] host [2] port"
         sys.exit(2)
     response, code = run(host, port)
+    print response
     sys.exit(code)
 
