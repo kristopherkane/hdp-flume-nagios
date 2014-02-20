@@ -43,7 +43,7 @@ def run(host, port):
 
     #iterate through the JSON and determine if at least one source is active
     for entry in json_object:
-        if entry.split(".")[0] in ["SORCE", "SINK", "CHANNEL"]:
+        if entry.split(".")[0] in ["SOURCE", "SINK", "CHANNEL"]:
             return "OK::FLUME::Flume agent is running.", 0
 
     return "ERROR::FLUME::Could not contact the mertics port.", 2
