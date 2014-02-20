@@ -1,0 +1,9 @@
+#Add the following entries to the nagios.cfg.erb in /var/lib/ambari-agent/puppet/modules/hdp-nagios/templates/
+#DO NOT OVERWRITE the file with this one.  Simply add this to the end.
+#These entries will have to be updated each time the hdp_mon_nagios_addons*.noarch is updated.
+# Definitions for flume agents
+cfg_file=/etc/nagios/objects/flume-hosts.cfg
+cfg_file=/etc/nagios/objects/flume-hostgroups.cfg
+cfg_file=/etc/nagios/objects/flume-servicegroups.cfg
+cfg_file=/etc/nagios/objects/flume-services.cfg
+cfg_file=/etc/nagios/objects/flume-commands.cfg
