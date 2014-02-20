@@ -4,12 +4,13 @@ This plugin will identify and alert the availability of Flume agent accessibilit
 
 
 ###Dependencies
-HDP 2 installation, via Ambari, with Nagios enabled.
+HDP 2 installation, via Ambari, with  Nagios enabled.
 Python
 Flume agents running with the metric HTTP interface enabled Example: bin/flume-ng agent --conf-file example.conf --name a1 -Dflume.monitoring.type=http -Dflume.monitoring.port=34545
 Port 34545 is hard coded in [flume-services.cfg](/nagios-conf/objects/flume-services.cfg)
 
 ###Tested
+
 HDP 2 - CentOS 6
 
 
@@ -29,5 +30,5 @@ Create entries with hostnames of the Flume agents. Nagios will fail to start if 
 
 
 ##Help
-To troubleshoot Nagios startup failure, test the configuration file first:
+To troubleshoot Nagios startup failure, test the configuration file first:      ss
 root@host>nagios -v /etc/nagios/nagios.cfg
