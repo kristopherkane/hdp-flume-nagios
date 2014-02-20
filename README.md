@@ -10,7 +10,6 @@ Flume agents running with the metric HTTP interface enabled Example: bin/flume-n
 Port 34545 is hard coded in [flume-services.cfg](/nagios-conf/objects/flume-services.cfg)
 
 ###Tested
-
 HDP 2 - CentOS 6
 
 
@@ -24,11 +23,11 @@ servers in the stack, You don't need to populate the [flume-hosts.cfg](/nagios-c
 Create entries with hostnames of the Flume agents. Nagios will fail to start if there are duplicate host declarations.
 
 1. Append the Nagios Puppet template [nagios.cfg.erb](/ambari-puppet-modules/hdp-nagios/templates/nagios.cfg.erb) to the Ambari agent Puppet template at: /var/lib/ambari-agent/puppet/modules/hdp-nagios/templates/nagios.cfg.erb
-2. Add all Nagios configuration [files](/nagios-conf/objects/) and [check_oozie_workflows.sh](/src/com/kane/check_oozie_workflows.sh)  to /etc/nagios/objects on the Nagios server
+2. Add all Nagios configuration [files](/nagios-conf/objects/) to /etc/nagios/objects on the Nagios server
 3. Add the Python check [script](/src/flume_check.py) to the Nagios plugins directory at /usr/lib64/nagios/plugins and ensure permissions are 0755
 4. Restart Nagios via Ambari
 
 
 ##Help
-To troubleshoot Nagios startup failure, test the configuration file first:      ss
+To troubleshoot Nagios startup failure, test the configuration file first:
 root@host>nagios -v /etc/nagios/nagios.cfg
