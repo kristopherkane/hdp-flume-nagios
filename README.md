@@ -36,3 +36,4 @@ Create entries with hostnames of the Flume agents. Nagios will fail to start if 
 ##Help
 To troubleshoot Nagios startup failure, test the configuration file first:
 >root@host>nagios -v /etc/nagios/nagios.cfg
+Update
