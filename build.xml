@@ -5,6 +5,6 @@
     </description>
 
     <echo>Starting the build</echo>
-    <echo>Finishing the build</echo>
+    <echo>Finishing the build...</echo>
 
 </project>
