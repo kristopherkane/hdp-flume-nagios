@@ -1,4 +1,4 @@
-<project name="hdp-flume-nagios-build" default='all' basedir="." >
+<project name="hdp-flume-nagios-build" default='default' basedir="." >
 
     <description>
         Build the Flume Nagios plugin
