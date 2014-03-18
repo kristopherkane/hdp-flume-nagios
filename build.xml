@@ -1,10 +1,11 @@
-<project name="hdp-flume-nagios-build" default='default' basedir="." >
+<project name="hdp-flume-nagios-build"  default="1" basedir="." >
 
     <description>
         Build the Flume Nagios plugin
     </description>
-
-    <echo>Starting the build</echo>
-    <echo>Finishing the build...</echo>
+    <target name="1">
+        <echo>Starting the build</echo>
+        <echo>Finishing the build...</echo>>
+    </target>
 
 </project>
