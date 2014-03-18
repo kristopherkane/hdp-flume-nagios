@@ -7,7 +7,7 @@
     <property name="dist"  location="dist"/>
     <target name="1">
         <echo>Starting the build</echo>
-        <echo>Finishing the build...</echo>>
+        <echo>Finishing the build...</echo>
     </target>
 
 </project>
