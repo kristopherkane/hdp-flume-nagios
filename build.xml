@@ -7,6 +7,10 @@
     <property name="dist"  location="dist"/>
     <target name="1">
         <echo>Starting the build</echo>
+        <echo>Starting archive</echo>
+        <mkdir dir="${build}"/>
+        <tar destfile="${dist}/puppet-configs.tar" basedir="ambari-puppet-modules"/>
+
         <echo>Finishing the build...</echo>
     </target>
 
